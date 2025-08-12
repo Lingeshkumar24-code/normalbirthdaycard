@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h1>🎉 Happy Birthday! 🎂</h1>
+        <div class="images">
+            <img src="img3.jpg" alt="Birthday Image 1">
+            <img src="img4.jpg" alt="Birthday Image 2">
+            <img src="img5.jpg" alt="Birthday Image 3">
+        </div>
+
+        <div id="message-box" class="message-box">
+            Click a button to see the surprise!
+        </div>
+
+        <div class="buttons">
+            <button onclick="showJoke()">😂 Joke</button>
+            <button onclick="showMessage()">💌 Message</button>
+            <button onclick="toggleVideo()">📹 Video</button>
+        </div>
+
+        <div id="video-container" class="video-container" style="display: none;">
+            <video id="birthday-video" width="100%" controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
